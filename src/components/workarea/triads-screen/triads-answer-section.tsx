@@ -2,11 +2,10 @@
 
 import SuccessFailCard from '@/components/common/success-fail-card';
 import Typography from '@/components/common/typography';
-import cn from '@repo/ui/utils/cn';
 import { Fragment } from 'react';
 import { Note } from '../../../types/note-trainer.types';
-import Stack from '@repo/ui/components/stack';
-import Row from '@repo/ui/components/row';
+import { PTypography, Row, Stack } from '@paolojulian.dev/design-system';
+import cn from '@/utils/cn';
 
 export default function TriadsAnswerSection({
   onNext,
@@ -27,7 +26,7 @@ export default function TriadsAnswerSection({
         type={isCorrect ? 'success' : 'fail'}
       >
         <Stack className='gap-3'>
-          <Typography variant='body-wide'>CORRECT NOTES</Typography>
+          <PTypography variant='body-wide'>CORRECT NOTES</PTypography>
           <Row className='gap-3'>
             {correctNotes.map((correctNote, i) => (
               <div
@@ -42,12 +41,12 @@ export default function TriadsAnswerSection({
                   }
                 )}
               >
-                <Typography
+                <PTypography
                   className={cn('uppercase', 'text-black')}
-                  variant='heading-sm'
+                  variant='body'
                 >
                   {correctNote}
-                </Typography>
+                </PTypography>
               </div>
             ))}
           </Row>

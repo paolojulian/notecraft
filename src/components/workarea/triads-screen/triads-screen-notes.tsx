@@ -2,10 +2,10 @@
 
 import Typography from '@/components/common/typography';
 import { Note } from '../../../types/note-trainer.types';
-import Stack from '@repo/ui/components/stack';
-import cn from '@repo/ui/utils/cn';
 import TriadsScreenQuestion from '@/components/workarea/triads-screen/triads-screen-question';
 import { Scale } from '@/types/scale.types';
+import { Stack } from '@paolojulian.dev/design-system';
+import cn from '@/utils/cn';
 
 interface Props {
   rootNote?: Note;

@@ -1,4 +1,4 @@
-import cn from '@repo/ui/utils/cn';
+import cn from '@/utils/cn';
 import { ReactElement } from 'react';
 
 interface Props {

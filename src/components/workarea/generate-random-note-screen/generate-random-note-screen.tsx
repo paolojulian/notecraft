@@ -4,11 +4,11 @@ import Typography from '@/components/common/typography';
 import Controls from '@/components/workarea/generate-random-note-screen/components/controls';
 import { generateRandomNotePerScale } from '@/utils/generate-random-note-per-scale';
 import useLocalStorage from '@/utils/use-local-storage';
-import Stack from '@repo/ui/components/stack';
-import cn from '@repo/ui/utils/cn';
 import { useCallback, useEffect, useState } from 'react';
 import { Note } from '../../../types/note-trainer.types';
 import { Scale } from '../../../types/scale.types';
+import cn from '@/utils/cn';
+import { Stack } from '@paolojulian.dev/design-system';
 
 const INITIAL_SCALE: Scale = 'C major';
 

@@ -1,5 +1,5 @@
 import Typography from '@/components/common/typography';
-import cn from '@repo/ui/utils/cn';
+import cn from '@/utils/cn';
 import { Fragment, ReactElement } from 'react';
 
 const MIN_NOTE_COUNT = 1;

@@ -1,7 +1,6 @@
 'use client';
 
-import Stack from '@repo/ui/components/stack';
-import Typography from '@repo/ui/components/typography';
+import { PTypography, Stack } from '@paolojulian.dev/design-system';
 import { Fragment } from 'react';
 
 interface Props {
@@ -16,7 +15,7 @@ export default function TriadsScreenQuestion({
   return (
     <Stack className='gap-10'>
       {/* Question */}
-      <Typography className='text-white text-center' variant={'body'}>
+      <PTypography className='text-white text-center' variant={'body'}>
         {!noteTriadName ? (
           'Generating Question...'
         ) : (
@@ -26,7 +25,7 @@ export default function TriadsScreenQuestion({
             <span className='text-secondary'>{scaleName} scale</span>?
           </Fragment>
         )}
-      </Typography>
+      </PTypography>
     </Stack>
   );
 }

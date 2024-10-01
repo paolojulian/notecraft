@@ -1,5 +1,5 @@
-import Typography from '@repo/ui/components/typography';
-import cn from '@repo/ui/utils/cn';
+import cn from '@/utils/cn';
+import { PTypography } from '@paolojulian.dev/design-system';
 import Link from 'next/link';
 
 interface ButtonBaseProps {
@@ -29,18 +29,18 @@ export default function Button({
   if (type === 'link') {
     return (
       <Link href={href} className={className}>
-        <Typography variant={'body'} className='text-white'>
+        <PTypography variant={'body'} className='text-white'>
           {title}
-        </Typography>
+        </PTypography>
       </Link>
     );
   }
 
   return (
     <button className={className}>
-      <Typography variant={'body'} className='text-white'>
+      <PTypography variant={'body'} className='text-white'>
         {title}
-      </Typography>
+      </PTypography>
     </button>
   );
 }

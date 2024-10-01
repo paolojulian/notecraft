@@ -1,5 +1,5 @@
 import Typography from '@/components/common/typography/typography';
-import cn from '@repo/ui/utils/cn';
+import cn from '@/utils/cn';
 import { VariantProps, cva } from 'class-variance-authority';
 
 export const noteChoiceVariants = cva('button', {

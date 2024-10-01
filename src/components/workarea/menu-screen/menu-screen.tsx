@@ -1,9 +1,8 @@
+import { PTypography, Stack } from '@paolojulian.dev/design-system';
+import getAssetURL from '../../../utils/asset-map';
 import Container from '../../common/container';
 import SectionTitle from '../../common/section-title';
 import MenuItem from './menu-item';
-import getAssetURL from '../../../utils/asset-map';
-import Stack from '@repo/ui/components/stack';
-import Typography from '@repo/ui/components/typography';
 
 export default function MenuScreen() {
   return (
@@ -12,9 +11,9 @@ export default function MenuScreen() {
         <SectionTitle title='Note Trainer' />
 
         <Stack className='gap-4 items-start w-full py-12'>
-          <Typography className='text-gray' variant={'body'}>
+          <PTypography className='text-gray' variant={'body'}>
             Choose a practice method.
-          </Typography>
+          </PTypography>
           <Stack className='gap-6 items-stretch w-full'>
             <MenuItem
               href='/fretboard-mastery'

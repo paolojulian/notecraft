@@ -1,4 +1,4 @@
-import Typography from '@repo/ui/components/typography';
+import { PTypography } from '@paolojulian.dev/design-system';
 
 interface Props {
   title: string;
@@ -6,8 +6,8 @@ interface Props {
 
 export default function SectionTitle({ title }: Props) {
   return (
-    <Typography className='text-gray uppercase mt-6' variant={'body-wide'}>
+    <PTypography className='text-gray uppercase mt-6' variant={'body-wide'}>
       {title}
-    </Typography>
+    </PTypography>
   );
 }

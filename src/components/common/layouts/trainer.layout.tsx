@@ -1,9 +1,8 @@
 import Container from '@/components/common/container';
 import Typography from '@/components/common/typography';
 import HomeIcon from '@/components/icons/home-icon';
-import Row from '@repo/ui/components/row';
-import Stack from '@repo/ui/components/stack';
-import cn from '@repo/ui/utils/cn';
+import cn from '@/utils/cn';
+import { Row, Stack } from '@paolojulian.dev/design-system';
 import Link from 'next/link';
 import { ReactElement } from 'react';
 

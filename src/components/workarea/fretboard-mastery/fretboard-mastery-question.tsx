@@ -1,7 +1,6 @@
 'use client';
 
-import Row from '@repo/ui/components/row';
-import Stack from '@repo/ui/components/stack';
+import { Row, Stack } from '@paolojulian.dev/design-system';
 import { FretNumber, Note } from '../../../types/note-trainer.types';
 import NoteChoices from '../../common/note-choices/note-choices';
 

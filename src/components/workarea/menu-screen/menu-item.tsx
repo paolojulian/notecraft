@@ -1,6 +1,5 @@
-import Stack from '@repo/ui/components/stack';
-import Typography from '@repo/ui/components/typography';
-import cn from '@repo/ui/utils/cn';
+import cn from '@/utils/cn';
+import { PTypography, Stack } from '@paolojulian.dev/design-system';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -26,7 +25,7 @@ export default function MenuItem({ imageURL, href, title }: Props) {
           fill
         />
         <div className='absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent -z-10'></div>
-        <Typography variant='body'>{title}</Typography>
+        <PTypography variant='body'>{title}</PTypography>
       </Stack>
     </Link>
   );

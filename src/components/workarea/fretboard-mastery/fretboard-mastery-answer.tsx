@@ -2,7 +2,7 @@
 
 import SuccessFailCard from '@/components/common/success-fail-card';
 import Typography from '@/components/common/typography/typography';
-import cn from '@repo/ui/utils/cn';
+import cn from '@/utils/cn';
 import { Fragment } from 'react';
 import { Note } from '../../../types/note-trainer.types';
 

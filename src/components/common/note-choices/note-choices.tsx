@@ -1,5 +1,5 @@
 import NoteChoice from '@/components/common/note-choice';
-import cn from '@repo/ui/utils/cn';
+import cn from '@/utils/cn';
 import { useMemo } from 'react';
 import { Note } from '../../../types/note-trainer.types';
 import { getNotes } from '../../../utils/get-notes';

@@ -1,7 +1,7 @@
 'use client';
 
+import { PTypography } from '@paolojulian.dev/design-system';
 import { DisplayState } from './fretboard-mastery';
-import Typography from '@repo/ui/components/typography';
 import Link from 'next/link';
 
 export default function FretboardMasteryFooter({
@@ -12,12 +12,12 @@ export default function FretboardMasteryFooter({
   displayState: DisplayState;
 }) {
   const textContainer = (text: string) => (
-    <Typography
+    <PTypography
       variant='body-wide'
       className='text-secondary uppercase py-5 w-full text-center'
     >
       {text}
-    </Typography>
+    </PTypography>
   );
 
   if (displayState === 'answer') {

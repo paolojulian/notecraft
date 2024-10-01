@@ -1,6 +1,6 @@
 'use client';
 import { Note, Tone } from '@/types/note-trainer.types';
-import cn from '@repo/ui/utils/cn';
+import cn from '@/utils/cn';
 import { useEffect, useRef, useState } from 'react';
 import styles from './play-pause-note.module.css';
 import { getMusicFilePath } from '@/utils/preload-notes';

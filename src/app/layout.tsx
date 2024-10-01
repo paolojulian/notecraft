@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
+import '@paolojulian.dev/design-system/style.css';
 import './globals.css';
-import '@repo/ui/styles.css';
 
 export const metadata: Metadata = {
   title: 'Note Craft',

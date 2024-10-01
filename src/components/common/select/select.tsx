@@ -1,10 +1,10 @@
 'use client';
+import cn from '@/utils/cn';
 import { useClickOutside } from '../../../utils/use-click-outside/use-click-outside';
-import Typography from '@repo/ui/components/typography';
-import cn from '@repo/ui/utils/cn';
 import { Fragment, ReactElement, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { usePopper } from 'react-popper';
+import { PTypography } from '@paolojulian.dev/design-system';
 
 interface Props {
   // eslint-disable-next-line no-unused-vars
@@ -43,9 +43,9 @@ export default function Select({ children, placeholder, value }: Props) {
         onClick={handleClick}
       >
         <div className='flex items-center justify-center gap-4'>
-          <Typography className='text-white capitalize'>
+          <PTypography className='text-white capitalize'>
             {value ?? placeholder}
-          </Typography>
+          </PTypography>
           <svg
             width='16'
             height='15'
